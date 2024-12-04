@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@mocks-server/main": "^4.1.0"
+  },
+  "scripts": {
+    "mocks" : "mocks-server"
+  }
+}
