@@ -22,5 +22,9 @@
   {
     "id": "auth",
     "routes": ["log-something:log", "verify-login:verify"]
+  },
+  {
+    "id": "vindecodeWwithauth",
+    "routes": ["vin-decode-oem-with-auth:decode"]
   }
 ]

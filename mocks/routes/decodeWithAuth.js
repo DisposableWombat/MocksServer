@@ -20,16 +20,16 @@ module.exports = [
 							const cmf = req.params.dealerid;
 							res.status(200);
 							if (cmf == 77770666) {
-								res.sendFile(fileRoot + fixtures/vin_response_OE.json)
+								res.sendFile(fileRoot + "fixtures/vin_response_OE.json")
 							} else {
-								res.sendFile(fileRoot + fixtures/vin_response_nonOE.json)
+								res.sendFile(fileRoot + "fixtures/vin_response_nonOE.json")
 							}
-					} else {
-						res.status(200);
-						res.send("no soup for you");
+						} else {
+							res.status(200);
+							res.send("no soup for you");
+						}
 					}
 				}
-				
 			}
 		]
 
