@@ -21,6 +21,6 @@
   },
   {
     "id": "auth",
-    "routes": ["auth-test:log-something"]
+    "routes": ["log-something:log", "verify-login:verify"]
   }
 ]
