@@ -1,21 +1,26 @@
 [
   {
-    "id": "base",
-    "routes": ["add-headers:enabled", "get-users:success", "get-user:success"]
+    "id": "goodlicense",
+    "routes": ["get-license:success"]
   },
   {
-    "id": "no-headers",
-    "from": "base",
-    "routes": ["add-headers:disabled"]
+    "id": "badlicense",
+    "routes": ["get-license:fail"]
   },
   {
-    "id": "all-users",
-    "from": "base",
-    "routes": ["get-users:all", "get-user:id-3"]
+    "id": "dukeOfMadnessMotors",
+    "routes": ["get-license:dukeOfMadnessMotors"]
   },
   {
-    "id": "user-real",
-    "from": "no-headers",
-    "routes": ["get-user:real"]
+    "id": "lookup",
+    "routes": ["get-license:fileLookup"]
+  },
+  {
+    "id": "vindecode",
+    "routes": ["vin-decode-oem:decode", "vin-decode-non-oem:decode"]
+  },
+  {
+    "id": "auth",
+    "routes": ["auth-test:log-something"]
   }
 ]
